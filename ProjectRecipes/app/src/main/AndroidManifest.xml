@@ -13,22 +13,7 @@
         android:theme="@style/Theme.ProjectRecipes"
         tools:targetApi="31">
         <activity
-            android:name=".Exit.Exit"
-            android:exported="false" />
-        <activity
-            android:name=".Home_Details.Home_Details"
-            android:exported="false" />
-        <activity
-            android:name=".Home.Home"
-            android:exported="false" />
-        <activity
-            android:name=".Details.Details3"
-            android:exported="false" />
-        <activity
-            android:name=".Details.Details2"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivaty.MainActivity"
+            android:name=".mainActivaty.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.ProjectRecipes">
@@ -38,9 +23,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Details.Details"
-            android:exported="false" />
     </application>
 
 </manifest>

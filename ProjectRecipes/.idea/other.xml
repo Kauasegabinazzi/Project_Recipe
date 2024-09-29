@@ -4,6 +4,18 @@
     <option name="deviceSelectionList">
       <list>
         <PersistentDeviceSelectionData>
+          <option name="api" value="30" />
+          <option name="brand" value="motorola" />
+          <option name="codename" value="java" />
+          <option name="id" value="java" />
+          <option name="manufacturer" value="Motorola" />
+          <option name="name" value="G20" />
+          <option name="screenDensity" value="280" />
+          <option name="screenX" value="720" />
+          <option name="screenY" value="1600" />
+          <option name="selected" value="true" />
+        </PersistentDeviceSelectionData>
+        <PersistentDeviceSelectionData>
           <option name="api" value="27" />
           <option name="brand" value="DOCOMO" />
           <option name="codename" value="F01L" />
@@ -180,17 +192,6 @@
           <option name="screenY" value="2244" />
         </PersistentDeviceSelectionData>
         <PersistentDeviceSelectionData>
-          <option name="api" value="30" />
-          <option name="brand" value="motorola" />
-          <option name="codename" value="java" />
-          <option name="id" value="java" />
-          <option name="manufacturer" value="Motorola" />
-          <option name="name" value="G20" />
-          <option name="screenDensity" value="280" />
-          <option name="screenX" value="720" />
-          <option name="screenY" value="1600" />
-        </PersistentDeviceSelectionData>
-        <PersistentDeviceSelectionData>
           <option name="api" value="34" />
           <option name="brand" value="google" />
           <option name="codename" value="komodo" />
@@ -314,5 +315,6 @@
         </PersistentDeviceSelectionData>
       </list>
     </option>
+    <option name="selectedCloudProject" value="thirt-33db7" />
   </component>
 </project>
