@@ -13,6 +13,21 @@
         android:theme="@style/Theme.ProjectRecipes"
         tools:targetApi="31">
         <activity
+            android:name=".Exit"
+            android:exported="false" />
+        <activity
+            android:name=".Home_Details"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Details3"
+            android:exported="false" />
+        <activity
+            android:name=".Details2"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
@@ -23,6 +38,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Details"
+            android:exported="false" />
     </application>
 
 </manifest>
