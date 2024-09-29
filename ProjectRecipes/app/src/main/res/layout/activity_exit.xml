@@ -5,6 +5,71 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Exit.Exit">
+    tools:context=".Exit.Exit"
+    android:background="@drawable/image">
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/profileImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/changePassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Mudar senha"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/userName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/changeLanguage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Alterar idioma"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/changePassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sair"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/changeLanguage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
