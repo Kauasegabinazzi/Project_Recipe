@@ -13,22 +13,22 @@
         android:theme="@style/Theme.ProjectRecipes"
         tools:targetApi="31">
         <activity
-            android:name=".Exit"
+            android:name=".Exit.Exit"
             android:exported="false" />
         <activity
-            android:name=".Home_Details"
+            android:name=".Home_Details.Home_Details"
             android:exported="false" />
         <activity
-            android:name=".Home"
+            android:name=".Home.Home"
             android:exported="false" />
         <activity
-            android:name=".Details3"
+            android:name=".Details.Details3"
             android:exported="false" />
         <activity
-            android:name=".Details2"
+            android:name=".Details.Details2"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivaty.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.ProjectRecipes">
@@ -39,7 +39,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Details"
+            android:name=".Details.Details"
             android:exported="false" />
     </application>
 

@@ -1,10 +1,11 @@
-package com.example.projectrecipes
+package com.example.projectrecipes.Details
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.projectrecipes.R
 
 class Details2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
