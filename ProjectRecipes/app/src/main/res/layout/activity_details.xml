@@ -5,8 +5,20 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Details.Details"
-    android:background="@drawable/image">
+    tools:context=".Details.Details">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image"
+        android:alpha="0.8"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
 
     <TextView
         android:id="@+id/titleText"
@@ -15,7 +27,7 @@
         android:text="Descubra o Mundo da Parrilla com Nosso Aplicativo de Receitas!"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="@android:color/white"
+        android:textColor="@color/orange"
         android:gravity="center"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
@@ -30,7 +42,7 @@
         android:layout_height="wrap_content"
         android:text="Bem-vindo ao seu novo companheiro de churrasco! Nosso aplicativo de receitas de parrilla é o guia definitivo para todos os amantes de um bom churrasco argentino..."
         android:textSize="16sp"
-        android:textColor="@android:color/white"
+        android:textColor="@color/orange"
         android:gravity="center"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
