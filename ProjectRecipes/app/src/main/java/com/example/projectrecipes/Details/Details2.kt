@@ -11,7 +11,7 @@ class Details2 : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details2)
 
-        val loginButton: Button = findViewById(R.id.nextButton3)
+        val loginButton: Button = findViewById(R.id.nextButton1)
 
         loginButton.setOnClickListener {
             val intent = Intent(this, Details3::class.java)
