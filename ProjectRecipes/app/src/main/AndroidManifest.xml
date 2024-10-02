@@ -12,11 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectRecipes"
         tools:targetApi="31">
-        <activity
-            android:name=".mainActivaty.MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.ProjectRecipes">
+        android:theme="@style/Theme.Orgs">
+        <activity android:name=".Details.Details" />
+        <activity android:name=".mainActivaty.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
