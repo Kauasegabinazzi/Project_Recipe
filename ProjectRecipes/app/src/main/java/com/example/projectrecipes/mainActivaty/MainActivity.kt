@@ -15,13 +15,9 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Obtenha o botão pelo ID
         val loginButton: Button = findViewById(R.id.loginButton)
 
-        // Defina um listener para o clique do botão
         loginButton.setOnClickListener {
-            // Crie uma Intent para iniciar a Details activity
-            val newProduct = "Example Product"
             val intent = Intent(this, Details::class.java)
             startActivity(intent)
         }
