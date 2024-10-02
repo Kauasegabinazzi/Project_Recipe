@@ -19,6 +19,10 @@
             android:exported="true"/>
         <activity android:name=".Details.Details3"
             android:exported="true"/>
+        <activity android:name=".Home.Home"
+            android:exported="true"/>
+        <activity android:name=".Exit.Exit"
+            android:exported="true"/>
         <activity android:name=".mainActivaty.MainActivity"
             android:exported="true">
             <intent-filter>

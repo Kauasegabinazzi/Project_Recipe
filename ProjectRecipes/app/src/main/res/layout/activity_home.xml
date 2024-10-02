@@ -20,6 +20,20 @@
         android:layout_height="match_parent"
         android:background="#80000000" />
 
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/circular_image"
+        android:contentDescription="Home"
+        android:layout_margin="16dp"
+        android:text="+"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
