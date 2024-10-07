@@ -3,12 +3,12 @@ package com.example.projectrecipes.mainActivaty
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.RecyclerView
 import com.example.projectrecipes.Details.Details
+import com.example.projectrecipes.ProductsListAdapter
 import com.example.projectrecipes.R
+import com.example.projectrecipes.models.Product
 
 class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,5 +21,7 @@ class MainActivity : Activity() {
             val intent = Intent(this, Details::class.java)
             startActivity(intent)
         }
+
+
     }
 }
