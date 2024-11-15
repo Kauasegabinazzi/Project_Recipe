@@ -21,7 +21,11 @@ class Home : Activity() {
             context = this, products = listOf(
                 Product(name = "teste", description = "teste desc"),
                 Product(name = "teste2", description = "teste2 desc"),
-                Product(name = "teste3", description = "teste3 desc")
+                Product(name = "teste3", description = "teste3 desc"),
+                Product(name = "teste4", description = "teste4 desc"),
+                Product(name = "teste5", description = "teste6 desc"),
+                Product(name = "teste6", description = "teste7 desc")
+
             )
         )
 
