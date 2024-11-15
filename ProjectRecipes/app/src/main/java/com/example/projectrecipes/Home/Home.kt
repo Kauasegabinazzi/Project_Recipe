@@ -17,11 +17,13 @@ class Home : Activity() {
         setContentView(R.layout.activity_home)
 
         var reclyclerView = findViewById<RecyclerView>(R.id.recycler)
-        reclyclerView.adapter = ProductsListAdapter(context = this, products = listOf(
-            Product(name = "teste", description = "teste desc",),
-            Product(name = "teste2", description = "teste2 desc"),
-            Product(name = "teste3", description = "teste3 desc",)
-        ))
+        reclyclerView.adapter = ProductsListAdapter(
+            context = this, products = listOf(
+                Product(name = "teste", description = "teste desc"),
+                Product(name = "teste2", description = "teste2 desc"),
+                Product(name = "teste3", description = "teste3 desc")
+            )
+        )
 
         val backgroundImage: Button = findViewById(R.id.homeButton)
 
