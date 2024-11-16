@@ -9,12 +9,20 @@ import com.example.projectrecipes.Exit.Exit
 import com.example.projectrecipes.ProductsListAdapter
 import com.example.projectrecipes.R
 import com.example.projectrecipes.models.Product
+import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.reflect.TypeToken
 
 
 class Home : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+//        val recipeType = object : TypeToken<List<Recipe>>() {}.type
+//        val recipes: List<Recipe> = Gson().fromJson(json, recipeType)
+//
+//        // Configurando o RecyclerView com o adapter
+//        recyclerView.layoutManager = LinearLayoutManager(this)
+//        recyclerView.adapter = ProductsListAdapter(this, recipes)
 
         var reclyclerView = findViewById<RecyclerView>(R.id.recycler)
         reclyclerView.adapter = ProductsListAdapter(
