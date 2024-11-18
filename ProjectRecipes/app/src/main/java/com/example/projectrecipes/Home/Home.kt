@@ -19,23 +19,6 @@ class Home : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        val jsonString = assets.open("CardData.json").bufferedReader().use { it.readText() }
-
-        Log.d("JSON", jsonString)
-
-        val gson = Gson()
-        val productList = gson.fromJson<List<Product>>(
-            jsonString,
-            object : TypeToken<List<Product>>() {}.type
-        )
-
-        // Configura o RecyclerView
-        val recyclerView = findViewById<RecyclerView>(R.id.recycler)
-        recyclerView.adapter = ProductsListAdapter(
-            context = this,
-            products = productList
-        )
-
 //        var reclyclerView = findViewById<RecyclerView>(R.id.recycler)
 //        reclyclerView.adapter = ProductsListAdapter(
 //            context = this, products = listOf(
