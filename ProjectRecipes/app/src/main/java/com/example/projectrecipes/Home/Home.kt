@@ -36,12 +36,12 @@ class Home : Activity() {
 //            )
 //        )
 
-        val backgroundImage: Button = findViewById(R.id.homeButton)
-
-        backgroundImage.setOnClickListener {
-            val intent = Intent(this, Exit::class.java)
-            startActivity(intent)
-        }
+//        val backgroundImage: Button = findViewById(R.id.homeButton)
+//
+//        backgroundImage.setOnClickListener {
+//            val intent = Intent(this, Exit::class.java)
+//            startActivity(intent)
+//        }
     }
 
     fun read_json(){
@@ -50,6 +50,8 @@ class Home : Activity() {
         try{
             val inputStream: InputStream = assets.open("First.json")
             json = inputStream.bufferedReader().use { it.readText() }
+
+
         }
         catch (e : IOException){
 
