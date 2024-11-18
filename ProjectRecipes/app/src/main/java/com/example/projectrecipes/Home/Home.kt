@@ -12,12 +12,16 @@ import com.example.projectrecipes.R
 import com.example.projectrecipes.models.Product
 import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.reflect.TypeToken
 import com.google.gson.Gson
+import java.io.IOException
+import java.io.InputStream
 
 
 class Home : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+        read_json()
 
 //        var reclyclerView = findViewById<RecyclerView>(R.id.recycler)
 //        reclyclerView.adapter = ProductsListAdapter(
@@ -38,5 +42,18 @@ class Home : Activity() {
             val intent = Intent(this, Exit::class.java)
             startActivity(intent)
         }
+    }
+
+    fun read_json(){
+        var json : String? = null
+
+        try{
+            val inputStream: InputStream = assets.open("First.json")
+            json = inputStream.bufferedReader().use { it.readText() }
+        }
+        catch (e : IOException){
+
+        }
+
     }
 }
