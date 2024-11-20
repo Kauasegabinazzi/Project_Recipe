@@ -28,6 +28,9 @@
             android:name=".Home.Home"
             android:exported="true" />
         <activity
+            android:name=".Home_Details.Home_Details"
+            android:exported="true" />
+        <activity
             android:name=".Exit.Exit"
             android:exported="true" />
         <activity
