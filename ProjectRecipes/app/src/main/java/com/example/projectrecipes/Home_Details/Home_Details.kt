@@ -1,5 +1,6 @@
 package com.example.projectrecipes.Home_Details
 
+import android.app.Activity
 import android.os.Bundle
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -17,18 +18,18 @@ data class Recipe(
     val method: String
 )
 
-class Home_Details : AppCompatActivity() {
+class Home_Details : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_details)
 
         // Receber o nome da receita enviado pela Intent
-        val recipeName = intent.getStringExtra("product_name")
+       val recipeName = intent.getStringExtra("product_name")
 
         // Carregar o JSON e buscar a receita correspondente
         val recipes = loadRecipesFromJson()
-        val recipe = recipes.find { it.recipe_name == recipeName }
+       val recipe = recipes.find { it.recipe_name == recipeName }
 
         // Preencher os dados no layout
         if (recipe != null) {
@@ -52,7 +53,7 @@ class Home_Details : AppCompatActivity() {
 
     // Carregar o JSON do arquivo assets
     private fun loadRecipesFromJson(): List<Recipe> {
-        val inputStream = assets.open("recipes.json")
+        val inputStream = assets.open("Second.json")
         val reader = BufferedReader(InputStreamReader(inputStream))
         val json = reader.readText()
         reader.close()
