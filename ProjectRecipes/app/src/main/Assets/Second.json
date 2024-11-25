@@ -1,16 +1,50 @@
-{
-  "recipe_name": "Parrillada Argentina",
-  "description": "A Parrillada Argentina é um verdadeiro festim de sabores, tradicionalmente preparada na grelha, com uma variedade de carnes suculentas, como costela de boi, picanha, linguiça e frango, acompanhadas de batatas e legumes assados. Essa receita celebra a rica cultura argentina de churrasco, oferecendo uma combinação perfeita de texturas e temperos, com um toque de sal grosso e pimenta-do-reino. O uso de chimichurri e alecrim confere um sabor extra, tornando essa refeição uma experiência única para os amantes da boa carne. Ideal para reunir amigos e familiares em torno da churrasqueira.",
-  "ingredients": [
-    "1,5 kg de costela de boi",
-    "1 kg de picanha",
-    "1 kg de linguiça toscana",
-    "4 batatas médias",
-    "Legumes variados (cenoura, abobrinha, etc.)",
-    "Sal grosso a gosto",
-    "Pimenta-do-reino a gosto",
-    "Molho chimichurri",
-    "Alecrim fresco"
-  ],
-  "method": "Para preparar a Parrillada Argentina, comece temperando as carnes com sal grosso e pimenta-do-reino, deixando marinar por 30 minutos. Tempere o frango com alho, sal e pimenta e reserve. Em seguida, corte as batatas em rodelas e tempere com azeite, sal e pimenta. Coloque as carnes na grelha, começando pela costela, e as batatas e legumes em uma parte com menos calor. Deixe assar por cerca de 1 hora, virando as carnes a cada 15 minutos. Quando tudo estiver no ponto, retire da grelha e sirva com molho chimichurri e alecrim, se desejar."
-}
+[
+  {
+    "recipe_name": "Bolo de Cenoura",
+    "description": "Um bolo fofinho e saboroso, feito com",
+    "ingredients": [
+      "1,5 kg de costela de boi",
+      "1 kg de picanha",
+      "1 kg de linguiça toscana",
+      "4 batatas médias",
+      "Legumes variados (cenoura, abobrinha, etc.)",
+      "Sal grosso a gosto",
+      "Pimenta-do-reino a gosto",
+      "Molho chimichurri",
+      "Alecrim fresco"
+    ],
+    "method": "jfhdjfhdsjf"
+  },
+  {
+    "recipe_name": "Macarrão à Carbonara",
+    "description": "Clássico da culinária italiana,",
+    "ingredients": [
+      "1,5 kg de costela de boi",
+      "1 kg de picanha",
+      "1 kg de linguiça toscana",
+      "4 batatas médias",
+      "Legumes variados (cenoura, abobrinha, etc.)",
+      "Sal grosso a gosto",
+      "Pimenta-do-reino a gosto",
+      "Molho chimichurri",
+      "Alecrim fresco"
+    ],
+    "method": "hdsjfhjdsf"
+  },
+  {
+    "recipe_name": "Frango Assado com Ervas",
+    "description": "Frango temperado com",
+    "ingredients": [
+      "1,5 kg de costela de boi",
+      "1 kg de picanha",
+      "1 kg de linguiça toscana",
+      "4 batatas médias",
+      "Legumes variados (cenoura, abobrinha, etc.)",
+      "Sal grosso a gosto",
+      "Pimenta-do-reino a gosto",
+      "Molho chimichurri",
+      "Alecrim fresco"
+    ],
+    "method": "hfdjfhdjsfh"
+  }
+]
