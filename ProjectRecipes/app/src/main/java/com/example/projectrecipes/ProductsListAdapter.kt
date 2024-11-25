@@ -29,7 +29,6 @@ class ProductsListAdapter(private val context: Context, private var products: Li
         holder.loginButton.setOnClickListener {
             val intent = Intent(context, Home_Details::class.java)
             intent.putExtra("product_name", product.name)
-            intent.putExtra("product_description", product.description)
             context.startActivity(intent)
         }
     }

@@ -29,8 +29,6 @@
         android:layout_height="match_parent"
         android:padding="16dp">
 
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,17 +44,15 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="8dp" />
 
-
             <TextView
                 android:id="@+id/description_receive"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="A Parrillada Argentina é um verdadeiro festim de sabores, tradicionalmente preparada na grelha, com uma variedade de carnes suculentas, como costela de boi, picanha, linguiça e frango, acompanhadas de batatas e legumes assados. Essa receita celebra a rica cultura argentina de churrasco, oferecendo uma combinação perfeita de texturas e temperos, com um toque de sal grosso e pimenta-do-reino. O uso de chimichurri e alecrim confere um sabor extra, tornando essa refeição uma experiência única para os amantes da boa carne. Ideal para reunir amigos e familiares em torno da churrasqueira."
+                android:text="A Parrillada Argentina é um verdadeiro festim de sabores..."
                 android:textColor="#F2B84C"
                 android:textSize="14sp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="8dp" />
-
 
             <TextView
                 android:id="@+id/ingredients_title"
@@ -75,42 +71,13 @@
                 android:background="#80FFC107"
                 android:layout_marginVertical="8dp" />
 
-
+            <!-- Aqui é onde você adiciona o novo LinearLayout -->
             <LinearLayout
+                android:id="@+id/ingredients_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="- 1,5 kg de costela de boi"
-                    android:textColor="#F2B84C"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="- 1 kg de picanha"
-                    android:textColor="#F2B84C"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="- 1 kg de linguiça toscana"
-                    android:textColor="#F2B84C"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="- Ingrediente 4"
-                    android:textColor="#F2B84C"
-                    android:textSize="16sp" />
-
-            </LinearLayout>
-
+                android:orientation="vertical"
+                android:layout_marginTop="8dp" />
 
             <TextView
                 android:id="@+id/method_title"
@@ -123,17 +90,18 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginBottom="8dp" />
 
-
             <TextView
                 android:id="@+id/mode_prepare"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Para preparar a Parrillada Argentina, comece temperando as carnes com sal grosso e pimenta-do-reino, deixando marinar por 30 minutos. Tempere o frango com alho, sal e pimenta e reserve. Em seguida, corte as batatas em rodelas e tempere com azeite, sal e pimenta. Coloque as carnes na grelha, começando pela costela, e as batatas e legumes em uma parte com menos calor. Deixe assar por cerca de 1 hora, virando as carnes a cada 15 minutos. Quando tudo estiver no ponto, retire da grelha e sirva com molho chimichurri e alecrim, se desejar."
+                android:text="Para preparar a Parrillada Argentina..."
                 android:textColor="#F2B84C"
                 android:textSize="14sp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp" />
         </LinearLayout>
+
+
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
