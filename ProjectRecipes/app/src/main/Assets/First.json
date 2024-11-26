@@ -1,15 +1,18 @@
 [
   {
-    "name": "Bolo de Cenoura",
-    "description": "Um bolo fofinho e saboroso, feito com"
+    "name": "Costela na Parrilla",
+    "description": "Costela assada lentamente na brasa, garantindo maciez e sabor defumado."
   },
   {
-    "name": "Macarrão à Carbonara",
-    "description": "Clássico da culinária italiana,"
+    "name": "Bife de Chorizo",
+    "description": "Corte argentino grelhado na parrilla, suculento e perfeitamente selado."
   },
   {
-    "name": "Frango Assado com Ervas",
-    "description": "Frango temperado com "
+    "name": "Legumes na Parrilla",
+    "description": "Mix de legumes grelhados na brasa, realçando seus sabores naturais."
+  },
+  {
+    "name": "Provoleta",
+    "description": "Queijo provolone grelhado na parrilla, temperado com ervas e azeite."
   }
 ]
-
