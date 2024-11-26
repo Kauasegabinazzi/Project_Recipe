@@ -1,18 +1,22 @@
 [
   {
     "name": "Costela na Parrilla",
-    "description": "Costela assada lentamente na brasa, garantindo maciez e sabor defumado."
+    "description": "Costela assada lentamente na brasa"
   },
   {
     "name": "Bife de Chorizo",
-    "description": "Corte argentino grelhado na parrilla, suculento e perfeitamente selado."
+    "description": "Corte argentino grelhado na parrilla"
   },
   {
     "name": "Legumes na Parrilla",
-    "description": "Mix de legumes grelhados na brasa, realçando seus sabores naturais."
+    "description": "Mix de legumes grelhados na brasa"
   },
   {
     "name": "Provoleta",
-    "description": "Queijo provolone grelhado na parrilla, temperado com ervas e azeite."
+    "description": "Queijo provolone grelhado na parrilla"
+  },
+  {
+    "name": "Picanha na Parrilla",
+    "description": "Picanha grelhada com sal grosso"
   }
 ]
