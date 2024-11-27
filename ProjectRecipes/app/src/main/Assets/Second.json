@@ -1,50 +1,54 @@
 [
   {
-    "recipe_name": "Bolo de Cenoura",
-    "description": "Um bolo fofinho e saboroso, feito com",
+    "recipe_name": "Costela na Parrilla",
+    "description": "Costela assada lentamente na brasa",
     "ingredients": [
       "1,5 kg de costela de boi",
-      "1 kg de picanha",
-      "1 kg de linguiça toscana",
-      "4 batatas médias",
-      "Legumes variados (cenoura, abobrinha, etc.)",
+      "Molho chimichurri",
       "Sal grosso a gosto",
       "Pimenta-do-reino a gosto",
-      "Molho chimichurri",
       "Alecrim fresco"
     ],
-    "method": "jfhdjfhdsjf"
+    "method": "Assar a costela lentamente na brasa até atingir o ponto desejado."
   },
   {
-    "recipe_name": "Macarrão à Carbonara",
-    "description": "Clássico da culinária italiana,",
+    "recipe_name": "Bife de Chorizo",
+    "description": "Corte argentino grelhado na parrilla",
     "ingredients": [
-      "1,5 kg de costela de boi",
-      "1 kg de picanha",
-      "1 kg de linguiça toscana",
-      "4 batatas médias",
-      "Legumes variados (cenoura, abobrinha, etc.)",
+      "1 kg de bife de chorizo",
       "Sal grosso a gosto",
-      "Pimenta-do-reino a gosto",
-      "Molho chimichurri",
-      "Alecrim fresco"
+      "Molho chimichurri"
     ],
-    "method": "hdsjfhjdsf"
+    "method": "Grelhar o bife na parrilla até o ponto desejado."
   },
   {
-    "recipe_name": "Frango Assado com Ervas",
-    "description": "Frango temperado com",
+    "recipe_name": "Legumes na Parrilla",
+    "description": "Mix de legumes grelhados na brasa",
     "ingredients": [
-      "1,5 kg de costela de boi",
-      "1 kg de picanha",
-      "1 kg de linguiça toscana",
-      "4 batatas médias",
       "Legumes variados (cenoura, abobrinha, etc.)",
-      "Sal grosso a gosto",
-      "Pimenta-do-reino a gosto",
-      "Molho chimichurri",
-      "Alecrim fresco"
+      "Azeite de oliva",
+      "Sal a gosto",
+      "Pimenta-do-reino a gosto"
     ],
-    "method": "hfdjfhdjsfh"
+    "method": "Grelhar os legumes na parrilla até ficarem dourados."
+  },
+  {
+    "recipe_name": "Provoleta",
+    "description": "Queijo provolone grelhado na parrilla",
+    "ingredients": [
+      "Queijo provolone",
+      "Orégano",
+      "Azeite de oliva"
+    ],
+    "method": "Grelhar o provolone na parrilla e finalizar com orégano."
+  },
+  {
+    "recipe_name": "Picanha na Parrilla",
+    "description": "Picanha grelhada com sal grosso",
+    "ingredients": [
+      "1 kg de picanha",
+      "Sal grosso a gosto"
+    ],
+    "method": "Grelhar a picanha na parrilla até atingir o ponto desejado."
   }
 ]
