@@ -1,10 +1,14 @@
 package com.example.projectrecipes.Home_Details
 
+import android.annotation.SuppressLint
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.projectrecipes.Home.Home
 import com.example.projectrecipes.R
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -20,6 +24,7 @@ data class Recipe(
 
 class Home_Details : Activity() {
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_details)
@@ -48,6 +53,13 @@ class Home_Details : Activity() {
                 }
                 ingredientsLayout.addView(ingredientTextView)
             }
+        }
+
+        val loginButton: Button = findViewById(R.id.nextButton7)
+
+        loginButton.setOnClickListener {
+            val intent = Intent(this, Home::class.java)
+            startActivity(intent)
         }
     }
 
