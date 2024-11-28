@@ -27,7 +27,6 @@ class Home : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        // Inicializa o RecyclerView
         val recyclerView = findViewById<RecyclerView>(R.id.recycler)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
@@ -36,7 +35,7 @@ class Home : Activity() {
         adapter = ProductsListAdapter(this, originalProducts) // Inicializa o adapter
         recyclerView.adapter = adapter
 
-        // Configura a pesquisa
+        // faz a pesquisa
         val searchEditText: EditText = findViewById(R.id.searchEditText)
         searchEditText.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
@@ -44,14 +43,14 @@ class Home : Activity() {
                 val filteredProducts = originalProducts.filter {
                     it.name.lowercase().contains(query) || it.description.lowercase().contains(query)
                 }
-                adapter.updateList(filteredProducts) // Atualiza a lista no adapter
+                adapter.updateList(filteredProducts) // atualiza a lista no adapter
             }
 
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
         })
 
-        // Configura o botão para a tela de saída
+        // botão para entrar na tela de details
         val backgroundImage: Button = findViewById(R.id.homeButton)
         backgroundImage.setOnClickListener {
             val intent = Intent(this, Exit::class.java)
@@ -59,7 +58,7 @@ class Home : Activity() {
         }
     }
 
-    // Função para ler e processar o JSON
+    // lê o json
     private fun read_json(): List<Product> {
         var json: String? = null
 
@@ -70,12 +69,12 @@ class Home : Activity() {
             e.printStackTrace()
         }
 
-        // Usa Gson para converter o JSON em uma lista de objetos Product
+        // cria uma lista, utilizando Gson para converter o json
         return if (json != null) {
             val listType = object : TypeToken<List<Product>>() {}.type
             Gson().fromJson(json, listType)
         } else {
-            emptyList() // Retorna uma lista vazia se algo deu errado
+            emptyList() // a lista é limpada se for nula
         }
     }
 }
