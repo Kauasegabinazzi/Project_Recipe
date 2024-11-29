@@ -71,7 +71,6 @@
                 android:background="#80FFC107"
                 android:layout_marginVertical="8dp" />
 
-            <!-- Aqui é onde você adiciona o novo LinearLayout -->
             <LinearLayout
                 android:id="@+id/ingredients_list"
                 android:layout_width="match_parent"

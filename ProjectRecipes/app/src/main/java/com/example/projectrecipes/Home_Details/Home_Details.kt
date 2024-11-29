@@ -29,21 +29,21 @@ class Home_Details : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_details)
 
-        // Receber o nome da receita enviado pela Intent
+        // Receber o nome
        val recipeName = intent.getStringExtra("product_name")
 
-        // Carregar o JSON e buscar a receita correspondente
+        // busca a receita
         val recipes = loadRecipesFromJson()
        val recipe = recipes.find { it.recipe_name == recipeName }
 
-        // Preencher os dados no layout
+        // alimenta os dados
         if (recipe != null) {
             findViewById<TextView>(R.id.recipe_name).text = recipe.recipe_name
             findViewById<TextView>(R.id.description_receive).text = recipe.description
             findViewById<TextView>(R.id.method_title).text = "Modo de Preparo"
             findViewById<TextView>(R.id.mode_prepare).text = recipe.method
 
-            // Adicionar os ingredientes dinamicamente
+            // adiciona a lista de ingredientes
             val ingredientsLayout = findViewById<LinearLayout>(R.id.ingredients_list)
             recipe.ingredients.forEach { ingredient ->
                 val ingredientTextView = TextView(this).apply {
@@ -63,7 +63,7 @@ class Home_Details : Activity() {
         }
     }
 
-    // Carregar o JSON do arquivo assets
+    // pega o JSON
     private fun loadRecipesFromJson(): List<Recipe> {
         val inputStream = assets.open("Second.json")
         val reader = BufferedReader(InputStreamReader(inputStream))
