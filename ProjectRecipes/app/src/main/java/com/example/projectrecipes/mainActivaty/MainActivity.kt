@@ -12,14 +12,13 @@ import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : Activity() {
 
-    // Inicializar FirebaseAuth
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Inicialize o FirebaseAuth
+        // Inicia o FirebaseAuth
         auth = FirebaseAuth.getInstance()
 
         // Referência aos elementos da UI
@@ -27,12 +26,11 @@ class MainActivity : Activity() {
         val usernameEditText: EditText = findViewById(R.id.usernameEditText)
         val passwordEditText: EditText = findViewById(R.id.passwordEditText)
 
-        // Configurar o click listener para o botão de login
         loginButton.setOnClickListener {
             val email = usernameEditText.text.toString().trim()
             val password = passwordEditText.text.toString().trim()
 
-            // Validar campos
+            // Valida campos
             if (email.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Por favor, preencha todos os campos.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
@@ -42,12 +40,12 @@ class MainActivity : Activity() {
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
-                        // Login bem-sucedido
+
                         val intent = Intent(this, Details::class.java)
                         startActivity(intent)
-                        finish()  // Opcional: para finalizar a activity de login
+                        finish()
                     } else {
-                        // Se falhar, exibe uma mensagem de erro
+
                         Toast.makeText(this, "Falha no login: ${task.exception?.message}", Toast.LENGTH_LONG).show()
                     }
                 }
